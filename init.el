@@ -1,5 +1,5 @@
 ;;; init.el --- Load the full configuration -*- lexical-binding: t -*-
-;;; Commentary:  
+;;; Commentary:
 
 ;; This file bootstraps the configuration, which is divided into
 ;; a number of other files.
@@ -45,6 +45,7 @@
 ;; Constants
 (require 'init-const)
 (require 'init-global-config)
+(require 'init-ui)
 
 ;; Pakcages
 ;; Without this comment Emacs25 adds (package-initialize) here

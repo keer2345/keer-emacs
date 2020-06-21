@@ -38,7 +38,7 @@
 ;; -DefBindings
 
 ;; UTF8Coding
-(unless *sys/win32*  
+(unless *sys/win32*
   (set-selection-coding-system 'utf-8)
   (prefer-coding-system 'utf-8)
   (set-language-environment "UTF-8")
@@ -52,4 +52,21 @@
 ;; -UTF8Coding
 
 
-(provide 'init-global-config) 
+;;----------------------------------------------------------------------------
+;; Some basic preferences
+;;----------------------------------------------------------------------------
+(setq-default
+ column-number-mode t
+ delete-selection-mode t
+ indent-tabs-mode nil
+ auto-save-default nil
+ auto-save-list-file-prefix nil
+ make-backup-files nil
+ load-prefer-newer t
+ tooltip-delay 1.5
+ ring-bell-function 'ignore
+ sentence-end-double-space nil
+ truncate-lines nil
+ truncate-partial-width-windows nil)
+
+(provide 'init-global-config)
