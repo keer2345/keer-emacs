@@ -1,5 +1,6 @@
 (prelude-require-pacakges
- '(diminish
+ '(cl-lib
+   diminish
    hungry-delete
    try
    ))

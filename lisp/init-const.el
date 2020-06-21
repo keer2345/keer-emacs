@@ -41,4 +41,6 @@
   (executable-find "find")
   "Do we have GNU find?")
 
+(define-obsolete-function-alias 'after-load 'with-eval-after-load "")
+
 (provide 'init-const)

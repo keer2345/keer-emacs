@@ -45,17 +45,20 @@
 ;; Constants
 (require 'init-const)
 (require 'init-global-config)
-(require 'init-ui)
 
 ;; Pakcages
 ;; Without this comment Emacs25 adds (package-initialize) here
 (require 'init-elpa)
 (require 'init-elpa-prelude)
+(require 'init-elpa-purcell)
 
 (require 'init-packages)
 
+(require 'init-ui)
+(require 'init-themes)
+
 ;; eidt
-;;(require 'init-edit)
+(require 'init-edit)
 
 (require 'init-company)
 
