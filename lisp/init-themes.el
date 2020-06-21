@@ -31,7 +31,7 @@
 (defun dark ()
   "Activate a dark color theme."
   (interactive)
-  (setq custom-enabled-themes '(doom-material))
+  (setq custom-enabled-themes '(doom-one))
   (reapply-themes))
 
 

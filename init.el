@@ -56,6 +56,7 @@
 
 (require 'init-ui)
 (require 'init-themes)
+(require 'init-windows)
 
 ;; eidt
 (require 'init-edit)
