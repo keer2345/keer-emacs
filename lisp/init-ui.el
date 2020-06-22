@@ -1,4 +1,3 @@
-
 (setq-default initial-scratch-message
               (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
 
@@ -49,6 +48,11 @@
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
   (global-set-key (kbd "M-S-<return>") 'toggle-frame-fullscreen)
   (global-set-key (kbd "C-S-<return>") 'toggle-frame-maximized))
+
+(when *sys/gui*
+  (setq initial-frame-alist
+        '((width . 110)
+          (height . 42))))
 
 (defun sanityinc/adjust-opacity (frame incr)
   "Adjust the background opacity of FRAME by increment INCR."
