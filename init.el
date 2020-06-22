@@ -62,9 +62,13 @@
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-flycheck)
+(require 'init-projectile)
 
 ;; eidt
 (require 'init-edit)
+
+;; Programming Configuration
+(require 'prog-scala)
 
 
 ;;----------------------------------------------------------------------------
