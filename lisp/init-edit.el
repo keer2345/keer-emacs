@@ -1,3 +1,10 @@
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+
+;; Newline at end of file
+(setq require-final-newline t)
+(delete-selection-mode t)
+
 ;; Hungry deletion
 (use-package hungry-delete
   :ensure nil

@@ -54,6 +54,8 @@
 
 (require 'init-packages)
 
+(require 'init-ivy)
+
 (require 'init-ui)
 (require 'init-themes)
 (require 'init-windows)

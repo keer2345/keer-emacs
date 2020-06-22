@@ -38,4 +38,7 @@
 (global-set-key (kbd "M-H M-_") (lambda () (interactive) (resize-window nil -5)))
 ;; -ResizeWidthheight
 
+(use-package ace-window
+  :bind ("C-x o" . ace-window))
+
 (provide 'init-windows)

@@ -57,8 +57,6 @@
 ;;----------------------------------------------------------------------------
 (setq-default
  column-number-mode t
- delete-selection-mode t
- indent-tabs-mode nil
  auto-save-default nil
  auto-save-list-file-prefix nil
  make-backup-files nil
