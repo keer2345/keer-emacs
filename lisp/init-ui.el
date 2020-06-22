@@ -3,7 +3,9 @@
 
 (use-package disable-mouse
   :init
-  (global-disable-mouse-mode))
+  (global-disable-mouse-mode)
+  :custom
+  (disable-mouse-mode-global-lighter nil))
 
 (if (and *sys/mac* *sys/gui*)
     (menu-bar-mode 1)

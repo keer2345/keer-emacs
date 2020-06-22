@@ -42,4 +42,19 @@
   (after-load 'dimmer
     (advice-add 'frame-set-background-mode :after (lambda (&rest args) (dimmer-process-all)))))
 
+
+;; DoomModeline
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1)
+;;   :custom
+;;   ;; Don't compact font caches during GC. Windows Laggy Issue
+;;   (inhibit-compacting-font-caches t)
+;;   (doom-modeline-minor-modes t)
+;;   (doom-modeline-icon t)
+;;   (doom-modeline-major-mode-color-icon t)
+;;   (doom-modeline-height 15)
+)
+;; -DoomModeline
+
 (provide 'init-themes)

@@ -54,16 +54,18 @@
 
 (require 'init-packages)
 
-(require 'init-ivy)
 
 (require 'init-ui)
 (require 'init-themes)
 (require 'init-windows)
 
+(require 'init-ivy)
+(require 'init-company)
+(require 'init-flycheck)
+
 ;; eidt
 (require 'init-edit)
 
-(require 'init-company)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface

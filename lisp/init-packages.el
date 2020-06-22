@@ -1,5 +1,6 @@
 (prelude-require-pacakges
- '(cl-lib
+ '(all-the-icons
+   cl-lib
    diminish
    hungry-delete
    try
