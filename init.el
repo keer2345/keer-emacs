@@ -63,6 +63,7 @@
 (require 'init-company)
 (require 'init-flycheck)
 (require 'init-projectile)
+(require 'init-lsp)
 
 ;; eidt
 (require 'init-edit)
