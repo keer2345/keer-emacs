@@ -1,9 +1,17 @@
+;;; init-ui.el --- Defaults for themes -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
 (setq-default initial-scratch-message
-              (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
+             (concat ";; Happy hacking, " user-login-name " - Emacs ♥ you!\n\n"))
+
+;; fonts
+(set-face-attribute 'default nil :font "Fira Code")
+;; something for icons?
+(setq inhibit-compacting-font-caches t)
 
 (use-package disable-mouse
-  :init
-  (global-disable-mouse-mode)
+  :hook
+  (after-init . global-disable-mouse-mode)
   :custom
   (disable-mouse-mode-global-lighter nil))
 
@@ -90,7 +98,9 @@
 (add-hook 'after-init-hook 'default-text-scale-mode)
 
 
-
+(use-package display-line-numbers
+  :custom (global-display-line-numbers-mode nil))
 
 
 (provide 'init-ui)
+;;; init-ui.el ends here

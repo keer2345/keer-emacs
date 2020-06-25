@@ -1,10 +1,15 @@
 (use-package lsp-mode
+    :init
+      (setq lsp-prefer-flymake nil)
+      (setq lsp-keymap-prefix "C-l")
   ;; Optional - enable lsp-mode automatically in scala files
-  :hook  (lsp-mode . lsp-lens-mode)
+  :hook
+    (scala-mode . lsp)
+    (lsp-mode . lsp-lens-mode)
   :config (setq lsp-prefer-flymake nil))
 
 ;; Add metals backend for lsp-mode
-(use-package lsp-metals)
+;;(use-package lsp-metals)
 
 ;; Enable nice rendering of documentation on hover
 (use-package lsp-ui)

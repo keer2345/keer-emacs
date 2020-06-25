@@ -1,7 +1,9 @@
+;;; https://scalameta.org/metals/docs/editors/emacs.html
+;;; https://github.com/thatwist/.emacs.d/blob/master/init.el
+;;
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
-  :mode "\\.s\\(cala\\|bt\\)$"
-  :hook  (scala-mode . lsp))
+  :mode "\\.s\\(cala\\|bt\\|c\\)$")
 
 ;; Enable sbt mode for executing sbt commands
 (use-package sbt-mode

@@ -16,8 +16,8 @@
 
 ;; Speed up startup
 (defvar keer-gc-cons-threshold (if (display-graphic-p) 8000000 800000)
-  "The default value to use for `gc-cons-threshold'. If you experience freezing,
-  decrease this. If you experience stuttering, increase this.")
+  "The default value to use for `gc-cons-threshold'. If you experience freezing,decrease this.
+If you experience stuttering, increase this.")
 
 (defvar keer-gc-cons-upper-limit (if (display-graphic-p) 400000000 100000000)
   "The temporary value for `gc-cons-threshold' to defer it.")
@@ -63,7 +63,6 @@
 (require 'init-company)
 (require 'init-flycheck)
 (require 'init-projectile)
-(require 'init-lsp)
 
 ;; eidt
 (require 'init-edit)
@@ -71,6 +70,7 @@
 ;; Programming Configuration
 (require 'prog-scala)
 
+(require 'init-lsp)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface

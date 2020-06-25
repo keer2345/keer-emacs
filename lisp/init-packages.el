@@ -3,6 +3,7 @@
    cl-lib
    diminish
    hungry-delete
+   recentf
    try
    ))
 

@@ -1,3 +1,6 @@
+;;; init-custom.el --- Defaults for themes -*- lexical-binding: t -*-
+;;; Commentary:
+;;; Code:
 ;; M-x : customize-group -> convenience -> keer
 (defgroup keer nil
   "Keer Emacs customizations."
@@ -5,12 +8,12 @@
   :link '(url-link :tag "Github" "https://github.com/keer2345/keer-emacs"))
 
 (defcustom keer-full-name "Keer Qin"
-  "Set user full name"
+  "Set user full name."
   :group 'keer
   :type 'string)
 
 (defcustom keer-short-name "Keer"
-  "Set user short name"
+  "Set user short name."
   :group 'keer
   :type 'string)
 
@@ -25,3 +28,4 @@
   :type 'string)
 
 (provide 'init-custom)
+;;; init-custom.el ends here

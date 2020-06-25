@@ -2,12 +2,14 @@
 ;;; Commentary:
 ;;; Code:
 
+
+
 ;; Personal information
-(setq user-full-name keer-full-name)
-(setq user-mail-address keer-mail-address)
+(defvar user-full-name keer-full-name)
+(defvar user-mail-address keer-mail-address)
 
 ;; Consts
-  
+
 (defconst keer-homepage
   "https://github.com/keer2345/keer-emacs"
   "The Github page of Keer Emacs.")
@@ -44,3 +46,4 @@
 (define-obsolete-function-alias 'after-load 'with-eval-after-load "")
 
 (provide 'init-const)
+;;; init-const.el ends here
