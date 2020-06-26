@@ -60,6 +60,7 @@ If you experience stuttering, increase this.")
 (require 'init-windows)
 (require 'init-tree)
 
+(require 'init-which-key)
 (require 'init-ivy)
 (require 'init-company)
 (require 'init-flycheck)

@@ -6,9 +6,16 @@
 (require 'package)
 
 
-(setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/") 
-			 ("melpa" . "http://elpa.emacs-china.org/melpa/") 
-			 ("marmalade" . "http://elpa.emacs-china.org/marmalade/")))
+(setq package-archives
+    '(("gnu"   . "http://mirrors.163.com/elpa/gnu/")
+      ("melpa" . "http://mirrors.163.com/elpa/melpa/")
+      ("melpa-stable" . "http://mirrors.163.com/elpa/melpa-stable/")
+      ("marmalade" . "http://mirrors.163.com/elpa/marmalade/")
+      ("org" . "http://mirrors.163.com/elpa/org/"))
+;;    '(("gnu"   . "http://elpa.emacs-china.org/gnu/") 
+;;      ("melpa" . "http://elpa.emacs-china.org/melpa/") 
+;;      ("marmalade" . "http://elpa.emacs-china.org/marmalade/"))
+)
 
 
 ;; Initialize packages
