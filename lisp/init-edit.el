@@ -5,6 +5,8 @@
 (setq require-final-newline t)
 (delete-selection-mode t)
 
+(add-hook 'before-save-hook  'whitespace-cleanup)
+
 (use-package avy
   :bind (("C-:" . avy-goto-char)
          ("C-'" . avy-goto-char-2)
@@ -52,6 +54,8 @@
   (bind-key "s-<delete>" 'sp-kill-sexp smartparens-mode-map)
   (bind-key "s-<backspace>" 'sp-backward-kill-sexp smartparens-mode-map))
 
-(add-hook 'before-save-hook  'whitespace-cleanup)
+(use-package expand-region
+  :commands 'er/expand-region)
+
 
 (provide 'init-edit)

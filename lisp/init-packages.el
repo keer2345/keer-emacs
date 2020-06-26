@@ -1,10 +1,15 @@
 (prelude-require-pacakges
  '(all-the-icons
    cl-lib
+   dash
    diminish
+   helpful
    hungry-delete
-   recentf
+   ripgrep
+   s
    try
+   wgrep
+   wgrep-ag
    ))
 
 (use-package which-key

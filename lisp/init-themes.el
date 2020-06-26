@@ -1,6 +1,7 @@
 (prelude-require-pacakges
  '(zenburn-theme
-   doom-themes))
+   doom-themes
+   gruvbox-theme))
 
 ;; Don't prompt to confirm theme safety. This avoids problems with
 ;; first-time startup on Emacs > 26.3.

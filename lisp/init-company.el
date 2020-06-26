@@ -7,15 +7,17 @@
 (use-package company
   :diminish company-mode
   :commands  company-abort
-  :bind (("M-/" . company-complete)
-	 )
+;;  :bind (("M-/" . company-complete))
   :custom
-  (company-idel-delay 0.1)
+  (company-idel-delay 0.5)
   (company-tooltip-limit 10)
   (company-minimum-prefix-length 2)  
   (company-show-numbers t)
 
   :hook (after-init . global-company-mode))
 
+(use-package company-box
+  :after company
+  :hook (company-mode . company-box-mode))
 
 (provide 'init-company)

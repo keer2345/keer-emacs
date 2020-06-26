@@ -58,6 +58,7 @@ If you experience stuttering, increase this.")
 (require 'init-ui)
 (require 'init-themes)
 (require 'init-windows)
+(require 'init-tree)
 
 (require 'init-ivy)
 (require 'init-company)
@@ -65,6 +66,7 @@ If you experience stuttering, increase this.")
 (require 'init-projectile)
 
 ;; eidt
+(require 'init-paredit)
 (require 'init-edit)
 
 ;; Programming Configuration

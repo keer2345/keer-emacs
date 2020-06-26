@@ -1,5 +1,5 @@
 (prelude-require-pacakges
-  '(ivy counsel swiper ))
+  '(ivy counsel swiper ag))
 
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
