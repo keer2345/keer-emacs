@@ -1,5 +1,6 @@
 (prelude-require-pacakges
- '(all-the-icons
+ '(2048-game
+   all-the-icons
    cl-lib
    dash
    diminish

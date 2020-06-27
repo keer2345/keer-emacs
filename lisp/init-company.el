@@ -20,4 +20,7 @@
   :after company
   :hook (company-mode . company-box-mode))
 
+(use-package company-terraform
+    :commands company-terraform-init)
+
 (provide 'init-company)

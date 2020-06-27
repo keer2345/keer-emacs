@@ -23,7 +23,15 @@
 
 
 ;; Add company-lsp backend for metals
-(use-package company-lsp)
+(use-package company-lsp
+             :after lsp-mode company
+             :custom
+  (company-lsp-cache-candidates t) ;; auto, t(always using a cache), or nil
+  (company-lsp-async t)
+  (company-lsp-enable-snippet t)
+  (company-lsp-enable-recompletion t)
+  :commands 
+  company-lsp)
 
 ;; Use the Debug Adapter Protocol for running tests and debugging
 (use-package posframe
