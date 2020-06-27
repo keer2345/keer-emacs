@@ -11,8 +11,8 @@
   :custom
   (company-idel-delay 0.5)
   (company-tooltip-limit 10)
-  (company-minimum-prefix-length 2)  
-  (company-show-numbers t)
+  (company-minimum-prefix-length 2)
+;;  (company-show-numbers t)
 
   :hook (after-init . global-company-mode))
 
