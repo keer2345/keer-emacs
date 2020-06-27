@@ -1,5 +1,6 @@
 ;;; https://scalameta.org/metals/docs/editors/emacs.html
 ;;; https://github.com/thatwist/.emacs.d/blob/master/init.el
+;;; https://www.youtube.com/watch?v=x7ey0ifcqAg
 ;;
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode

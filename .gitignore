@@ -57,3 +57,5 @@ site-lisp/package/
 /transient/
 /tutorial/
 /meghanada/
+.lsp-session-v1
+/lsp-cache
