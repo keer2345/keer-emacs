@@ -67,6 +67,7 @@ If you experience stuttering, increase this.")
 (require 'init-flycheck)
 (require 'init-projectile)
 (require 'init-yasnippet)
+(require 'init-markdown)
 
 ;; eidt
 (require 'init-paredit)

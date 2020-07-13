@@ -4,6 +4,7 @@
 ;;
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
+  :hook (scala-mode . paredit-mode)
   :mode "\\.s\\(cala\\|bt\\|c\\)$")
 
 ;; Enable sbt mode for executing sbt commands

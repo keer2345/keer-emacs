@@ -27,6 +27,8 @@
   ;;  :config (setq-default hungry-delete-chars-to-skip " \t\f\v")
   )
 
+(use-package undo-tree
+             :hook (after-init . global-undo-tree-mode))
 
 ;;;;;;; SMARTPARENS ;;;;;;;;
 ; if M-<backspace> annoys - see this - https://github.com/Fuco1/smartparens/pull/861/files
