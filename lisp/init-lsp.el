@@ -16,7 +16,7 @@
   (setq lsp-prefer-flymake nil)
   (setq
 ;; I will describe my Elixir setup on a next post :)
-   lsp-clients-elixir-server-executable "~/.elixir-ls/language_server.sh"
+   lsp-clients-elixir-server-executable "~/.elixir-ls/release/language_server.sh"
    lsp-auto-guess-root t) ; very useful
   (setq lsp-file-watch-ignored ; customize this to your liking :)
       '("[/\\\\]\\.git$"

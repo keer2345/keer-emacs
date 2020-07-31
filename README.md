@@ -1,4 +1,3 @@
-
 # Keer's Emacs Configuration
 ```
 git clone git@github.com:keer2345/keer-emacs.git .emacs.d
@@ -12,8 +11,10 @@ git clone git@github.com:keer2345/keer-emacs.git .emacs.d
 - https://github.com/redguardtoo/emacs.d
 - https://github.com/seagle0128/.emacs.d
 - https://github.com/MatthewZMD/.emacs.d
+- https://github.com/victorolinasc/dot_emacs
 
 ## Emacs Configuration
+- https://jamiecollinson.com/blog/my-emacs-config/
 - [Awesome emacs config files](https://github.com/caisah/emacs.dz)
 - [Sacha Chua's Emacs configuration](http://pages.sachachua.com/.emacs.d/Sacha.html)
 - [jamiecollinson.com](https://jamiecollinson.com/blog/my-emacs-config/)
@@ -35,4 +36,3 @@ xcode-select --install
 ```
 ### Scala with metals-emacs
 Build a `metals-emacs` binary for the latest [Metals](https://scalameta.org/metals/docs/editors/emacs.html) release using the [Coursier](https://github.com/coursier/coursier) command-line interface.
-

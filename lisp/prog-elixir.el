@@ -1,10 +1,14 @@
+;; https://gist.github.com/victorolinasc/27c8e87139827048ba93db0bdfa7d3ef#file-dev-packages-el
+;; https://github.com/victorolinasc/dot_emacs/blob/master/init.el
+;; https://www.badykov.com/emacs/2020/05/30/emacs-setup-for-elixir/
+
 (prelude-require-pacakges '(erlang
                             ob-elixir))
 
 (use-package elixir-mode
-  :load-path "~/dev/projects/emacs-elixir"
+;;  :load-path "~/dev/projects/emacs-elixir"
   :init
-  (add-to-list 'exec-path "~/dev/tools/elixir-ls/release/erl21")
+;;  (add-to-list 'exec-path "~/dev/tools/elixir-ls/release/erl21")
   (add-hook 'elixir-mode-hook
             (lambda ()
               (push '(">=" . ?\u2265) prettify-symbols-alist)

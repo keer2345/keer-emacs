@@ -19,6 +19,14 @@
                 avy-background t
                 avy-style 'pre))
 
+(use-package avy-zap
+  :bind (("M-z" . avy-zap-to-char-dwim)
+         ;; ("M-Z" . avy-zap-up-to-char-dwim)
+         ))
+
+(use-package expand-region
+  :bind ("C-=" . er/expand-region))
+
 ;; Hungry deletion
 (use-package hungry-delete
   :ensure nil
@@ -59,5 +67,8 @@
 (use-package expand-region
   :commands 'er/expand-region)
 
+(use-package feebleline
+    :config
+    (feebleline-mode 't))
 
 (provide 'init-edit)

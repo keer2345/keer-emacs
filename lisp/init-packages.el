@@ -4,10 +4,12 @@
 
 (prelude-require-pacakges
  '(2048-game
+   ag
    all-the-icons
    cl-lib
    dash
    diminish
+   fzf
    helpful
    hungry-delete
    ripgrep

@@ -75,6 +75,7 @@ If you experience stuttering, increase this.")
 (require 'init-edit)
 
 ;; Programming Configuration
+(require 'prog-common)
 (require 'prog-scala)
 (require 'prog-org-mode)
 (require 'prog-elixir)

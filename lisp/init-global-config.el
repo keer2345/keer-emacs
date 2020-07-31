@@ -51,6 +51,9 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 ;; -UTF8Coding
 
+(when (and *sys/mac* *sys/gui*)
+  (setq mac-command-modifier 'meta
+        mac-option-modifier 'super))
 
 ;;----------------------------------------------------------------------------
 ;; Some basic preferences
@@ -70,6 +73,14 @@
 
 (show-paren-mode 1)
 
+;; Increase garbage collector threshold
+(setq gc-cons-threshold 10000000)
 
+  ;; Restore after startup
+  (add-hook 'after-init-hook
+            (lambda ()
+              (setq gc-cons-threshold 1000000)
+              (message "gc-cons-threshold restored to %S"
+                       gc-cons-threshold)))
 
 (provide 'init-global-config)
