@@ -29,6 +29,7 @@ site-lisp/package/
 /frame-restore-parameters
 /.achievements
 /.bookmarks.el
+bookmarks
 /history
 /helm-adaptive-history
 /thumbs/

@@ -56,8 +56,8 @@
 
 (when *sys/gui*
   (add-to-list 'default-frame-alist '(fullscreen . maximized))
-  (global-set-key (kbd "M-S-<return>") 'toggle-frame-fullscreen)
-  (global-set-key (kbd "C-S-<return>") 'toggle-frame-maximized))
+  (global-set-key (kbd "C-M-f") 'toggle-frame-fullscreen)
+  (global-set-key (kbd "C-S-f") 'toggle-frame-maximized))
 
 (when *sys/gui*
   (setq initial-frame-alist

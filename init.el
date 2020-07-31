@@ -68,6 +68,7 @@ If you experience stuttering, increase this.")
 (require 'init-projectile)
 (require 'init-yasnippet)
 (require 'init-markdown)
+(require 'init-magit)
 
 ;; eidt
 (require 'init-paredit)
@@ -75,8 +76,11 @@ If you experience stuttering, increase this.")
 
 ;; Programming Configuration
 (require 'prog-scala)
+(require 'prog-org-mode)
+(require 'prog-elixir)
 
 (require 'init-lsp)
+(require 'init-format)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
@@ -91,3 +95,4 @@ If you experience stuttering, increase this.")
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
+(put 'downcase-region 'disabled nil)

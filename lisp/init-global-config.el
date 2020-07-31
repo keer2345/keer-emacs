@@ -60,11 +60,16 @@
  auto-save-default nil
  auto-save-list-file-prefix nil
  make-backup-files nil
+ create-lockfiles nil
  load-prefer-newer t
  tooltip-delay 1.5
  ring-bell-function 'ignore
  sentence-end-double-space nil
  truncate-lines nil
  truncate-partial-width-windows nil)
+
+(show-paren-mode 1)
+
+
 
 (provide 'init-global-config)

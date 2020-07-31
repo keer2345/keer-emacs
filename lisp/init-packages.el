@@ -1,3 +1,7 @@
+;;; package --- Summary
+;;; Commentary:
+;;; code:
+
 (prelude-require-pacakges
  '(2048-game
    all-the-icons
@@ -14,3 +18,4 @@
    ))
 
 (provide 'init-packages)
+;;; init-packages.el ends here
