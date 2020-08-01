@@ -96,4 +96,3 @@ If you experience stuttering, increase this.")
 ;; no-byte-compile: t
 ;; End:
 ;;; init.el ends here
-(put 'downcase-region 'disabled nil)

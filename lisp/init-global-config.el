@@ -71,6 +71,9 @@
  truncate-lines nil
  truncate-partial-width-windows nil)
 
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
 (show-paren-mode 1)
 
 ;; Increase garbage collector threshold
