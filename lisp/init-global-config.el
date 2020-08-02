@@ -27,12 +27,12 @@
 ;;
 ;;; Code:
 
-(global-set-key (kbd "C-z") nil)
 
 ;; DefBindings
 ;; Unbind unneeded keys
 (global-set-key (kbd "C-z") nil)
 (global-set-key (kbd "M-z") nil)
+(global-set-key (kbd "s-z") nil)
 (global-set-key (kbd "C-x C-z") nil)
 (global-set-key (kbd "M-/") nil)
 ;; -DefBindings
@@ -51,9 +51,9 @@
   (setq x-select-request-type '(UTF8_STRING COMPOUND_TEXT TEXT STRING)))
 ;; -UTF8Coding
 
-(when (and *sys/mac* *sys/gui*)
-  (setq mac-command-modifier 'meta
-        mac-option-modifier 'super))
+;; (when (and *sys/mac* *sys/gui*)
+;;   (setq mac-command-modifier 'meta
+;;         mac-option-modifier 'super))
 
 ;;----------------------------------------------------------------------------
 ;; Some basic preferences
