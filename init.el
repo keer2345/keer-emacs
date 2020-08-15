@@ -54,11 +54,13 @@ If you experience stuttering, increase this.")
 
 (require 'init-packages)
 
+(require 'init-function)
 (require 'init-shell)
 (require 'init-ui)
 (require 'init-themes)
 (require 'init-windows)
 (require 'init-tree)
+
 
 (require 'init-utils)
 (require 'init-which-key)
