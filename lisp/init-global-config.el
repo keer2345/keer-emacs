@@ -71,6 +71,7 @@
  truncate-lines nil
  truncate-partial-width-windows nil)
 
+(setq default-directory "~/")
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
