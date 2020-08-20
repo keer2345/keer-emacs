@@ -6,7 +6,6 @@
  '(2048-game
    ag
    all-the-icons
-   cl-lib
    dash
    diminish
    fzf

@@ -78,11 +78,14 @@ If you experience stuttering, increase this.")
 
 ;; Programming Configuration
 (require 'prog-common)
-(require 'prog-scala)
 (require 'prog-org-mode)
-(require 'prog-elixir)
 
-(require 'init-lsp)
+;; LSP mode
+;; (require 'prog-scala)
+;; (require 'prog-elixir)
+;;
+;; (require 'init-lsp)
+
 (require 'init-format)
 
 ;;----------------------------------------------------------------------------

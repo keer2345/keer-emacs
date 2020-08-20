@@ -2,7 +2,8 @@
 ;;; Commentary:
 ;;; Code:
 
-(require 'cl)
+
+(require 'cl-lib)
 (require 'package)
 
 
