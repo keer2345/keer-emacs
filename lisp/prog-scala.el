@@ -4,7 +4,7 @@
 ;;
 ;; Enable scala-mode for highlighting, indentation and motion commands
 (use-package scala-mode
-  :hook (scala-mode . paredit-mode)
+  ;; :hook (scala-mode . paredit-mode)
   :mode "\\.s\\(cala\\|bt\\|c\\)$")
 
 ;; Enable sbt mode for executing sbt commands
@@ -18,7 +18,10 @@
    'self-insert-command
    minibuffer-local-completion-map)
    ;; sbt-supershell kills sbt-mode:  https://github.com/hvesalai/emacs-sbt-mode/issues/152
-   (setq sbt:program-options '("-Dsbt.supershell=false"))
-)
+   (setq sbt:program-options '("-Dsbt.supershell=false")))
+
+;; Add metals backend for lsp-mode
+(use-package lsp-metals)
+
 
 (provide 'prog-scala)

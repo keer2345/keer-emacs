@@ -8,6 +8,7 @@
 (use-package elixir-mode
              ;;  :load-path "~/dev/projects/emacs-elixir"
              :init
+             (add-to-list 'exec-path "~/.elixir-ls/release")
              ;;  (add-to-list 'exec-path "~/dev/tools/elixir-ls/release/erl21")
              (add-hook 'elixir-mode-hook
                        (lambda ()

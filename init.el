@@ -81,14 +81,10 @@ If you experience stuttering, increase this.")
 (require 'prog-org-mode)
 
 ;; LSP mode
-;; (require 'prog-scala)
-;; (require 'prog-elixir)
-;;
-;; (require 'init-lsp)
+(require 'init-lsp)
 
-;; eglot
-;; (require 'init-eglot)
-;; (require 'prog-eglot-elixir)
+(require 'prog-scala)
+(require 'prog-elixir)
 
 ;; (require 'init-format)
 
