@@ -86,7 +86,11 @@ If you experience stuttering, increase this.")
 ;;
 ;; (require 'init-lsp)
 
-(require 'init-format)
+;; eglot
+;; (require 'init-eglot)
+;; (require 'prog-eglot-elixir)
+
+;; (require 'init-format)
 
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
