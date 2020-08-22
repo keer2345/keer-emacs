@@ -9,7 +9,6 @@
              ;;  :load-path "~/dev/projects/emacs-elixir"
              :init
              (add-to-list 'exec-path "~/.elixir-ls/release")
-             ;;  (add-to-list 'exec-path "~/dev/tools/elixir-ls/release/erl21")
              (add-hook 'elixir-mode-hook
                        (lambda ()
                          (push '(">=" . ?\u2265) prettify-symbols-alist)
@@ -21,6 +20,10 @@
                          (push '("->" . ?\u2192) prettify-symbols-alist)
                          (push '("<-" . ?\u2190) prettify-symbols-alist)
                          (push '("|>" . ?\u25B7) prettify-symbols-alist))))
+
+;; Create a buffer-local hook to run elixir-format on save, only when we enable elixir-mode.
+(add-hook 'elixir-mode-hook
+          (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
 
 (use-package exunit
              :ensure t
