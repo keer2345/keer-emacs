@@ -11,6 +11,7 @@
    fzf
    helpful
    hungry-delete
+   ranger
    ripgrep
    s
    try

@@ -12,6 +12,8 @@ git clone git@github.com:keer2345/keer-emacs.git .emacs.d
 - https://github.com/seagle0128/.emacs.d
 - https://github.com/MatthewZMD/.emacs.d
 - https://github.com/victorolinasc/dot_emacs
+- https://github.com/zamansky/dot-emacs
+- https://github.com/matman26/emacs-config
 
 ## Emacs Configuration
 - https://jamiecollinson.com/blog/my-emacs-config/
