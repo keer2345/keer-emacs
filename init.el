@@ -54,6 +54,7 @@ If you experience stuttering, increase this.")
 
 (require 'init-packages)
 
+(require 'init-utils)
 (require 'init-function)
 (require 'init-shell)
 (require 'init-ui)
@@ -62,7 +63,6 @@ If you experience stuttering, increase this.")
 (require 'init-tree)
 
 
-(require 'init-utils)
 (require 'init-which-key)
 (require 'init-ivy)
 (require 'init-company)
