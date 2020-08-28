@@ -3,6 +3,7 @@
 ;; https://www.badykov.com/emacs/2020/05/30/emacs-setup-for-elixir/
 
 (prelude-require-pacakges '(erlang
+                             mix
                              ob-elixir))
 
 (use-package elixir-mode
@@ -19,11 +20,12 @@
                          (push '("<-" . ?\u2190) prettify-symbols-alist)
                          (push '("->" . ?\u2192) prettify-symbols-alist)
                          (push '("<-" . ?\u2190) prettify-symbols-alist)
-                         (push '("|>" . ?\u25B7) prettify-symbols-alist))))
+                         (push '("|>" . ?\u25B7) prettify-symbols-alist)))
+             (add-hook 'elixir-mode-hook
+                       (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
+             (add-hook 'elixir-mode-hook 'mix-minor-mode))
 
 ;; Create a buffer-local hook to run elixir-format on save, only when we enable elixir-mode.
-(add-hook 'elixir-mode-hook
-          (lambda () (add-hook 'before-save-hook 'elixir-format nil t)))
 
 (use-package exunit
              :ensure t

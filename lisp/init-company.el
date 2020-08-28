@@ -5,22 +5,27 @@
 ;; https://github.com/MatthewZMD/.emacs.d/blob/master/elisp/init-company.el
 
 (use-package company
-  :diminish company-mode
-  :commands  company-abort
-;;  :bind (("M-/" . company-complete))
-  :custom
-  (company-idel-delay 0.5)
-  (company-tooltip-limit 10)
-  (company-minimum-prefix-length 2)
-;;  (company-show-numbers t)
+             :diminish company-mode
+             :commands  company-abort
+             ;;  :bind (("M-/" . company-complete))
+             :custom
+             (company-idel-delay 0.5)
+             (company-tooltip-limit 10)
+             (company-minimum-prefix-length 2)
+             ;;  (company-show-numbers t)
 
-  :hook (after-init . global-company-mode))
+             :hook (after-init . global-company-mode))
 
 ;; (use-package company-box
 ;;   :after company
 ;;   :hook (company-mode . company-box-mode))
 
+(use-package company-quickhelp
+             :after (company)
+             :config
+             (company-quickhelp-mode))
+
 (use-package company-terraform
-    :commands company-terraform-init)
+             :commands company-terraform-init)
 
 (provide 'init-company)

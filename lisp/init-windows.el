@@ -2,7 +2,7 @@
 (defun resize-window-width (w)
   "Resize the window width based on W."
   (interactive (list (if (> (count-windows) 1)
-                         (read-number "Set the current window with in [1~9]x10%: ")
+                       (read-number "Set the current window with in [1~9]x10%: ")
                        (error "You need more than 1 window to execute this function!"))))
   (message "%s" w)
   (window-resize nil (- (truncate (* (/ w 10.0) (frame-width))) (window-total-width)) t))
@@ -10,7 +10,7 @@
 (defun resize-window-height (h)
   "Resize the window width based on H."
   (interactive (list (if (> (count-windows) 1)
-                         (read-number "Set the current window height in [1~9]x10%: ")
+                       (read-number "Set the current window height in [1~9]x10%: ")
                        (error "You need more than 1 window to execute this function!"))))
   (message "%s" h)
   (window-resize nil (- (truncate (* (/ h 10.0) (frame-height))) (window-total-height))) nil)
@@ -23,7 +23,7 @@
 (defun resize-window (width delta)
   "Resize the current window's size. If WIDTH is non-nil, resize width by some DELTA."
   (if (> (count-windows) 1)
-      (window-resize nil delta width)
+    (window-resize nil delta width)
     (error "You need more than 1 window to execute this function!")))
 
 ;; Setup shorcuts for window resize width and height
@@ -39,7 +39,11 @@
 ;; -ResizeWidthheight
 
 (use-package ace-window
-  :bind ("C-x o" . ace-window))
+             :bind ("C-x o" . ace-window))
+
+(use-package popwin
+             :config
+             (popwin-mode 1))
 
 
 (provide 'init-windows)

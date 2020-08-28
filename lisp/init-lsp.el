@@ -30,7 +30,8 @@
 (use-package company-lsp
              :commands company-lsp
              :ensure t
-             :after (company lsp)
+             ;; :after (company lsp)
+             :after (company lsp-deferred)
              :config
              (setq company-transformers nil
                    company-lsp-async t
