@@ -88,6 +88,7 @@ If you experience stuttering, increase this.")
 
 ;; (require 'init-format)
 
+
 ;;----------------------------------------------------------------------------
 ;; Variables configured via the interactive 'customize' interface
 ;;----------------------------------------------------------------------------

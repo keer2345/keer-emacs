@@ -2,20 +2,20 @@
 ;; https://gist.github.com/victorolinasc/27c8e87139827048ba93db0bdfa7d3ef#file-dev-packages-el
 ;; https://nyk.ma/posts/emacs-2020-status/
 (use-package lsp-mode
-  :commands (lsp lsp-deferred)
-  :init
-  (setq
-   lsp-keymap-prefix "s-l")
-  :hook(((scala-mode
-          elixir-mode) . lsp-deferred)
-        ;; if you want which-key integration
-        (lsp-mode . lsp-enable-which-key-integration))
-  :config (setq lsp-prefer-flymake nil))
+             :init
+             (setq lsp-keymap-prefix "s-l"
+                   read-process-output-max (* 1024 1024))
+             ;;(setq read-process-output-max (* 1024 1024)) ;; 1mb
+             :commands (lsp lsp-deferred)
+             :hook((scala-mode . lsp-deferred)
+                   (elixir-mode . lsp-deferred)
+                   ;; if you want which-key integration
+                   (lsp-mode . lsp-enable-which-key-integration)))
 
 ;; optionally
 (use-package lsp-ui
-  :commands lsp-ui-mode
-  :after (lsp-mode))
+             :commands lsp-ui-mode
+             :after (lsp-mode))
 
 ;; if you are ivy user
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
@@ -29,13 +29,8 @@
 ; Auto-complete sources from LSP servers
 (use-package company-lsp
              :commands company-lsp
-             :ensure t
              ;; :after (company lsp)
-             :after (company lsp-deferred)
-             :config
-             (setq company-transformers nil
-                   company-lsp-async t
-                   company-lsp-cache-candidates nil)
+             :after (company lsp)
              (push 'company-lsp company-backends))
 
 ;; Use the Debug Adapter Protocol for running tests and debugging
