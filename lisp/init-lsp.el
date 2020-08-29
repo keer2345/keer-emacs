@@ -7,7 +7,7 @@
                    read-process-output-max (* 1024 1024))
              ;;(setq read-process-output-max (* 1024 1024)) ;; 1mb
              :commands (lsp lsp-deferred)
-             :hook((scala-mode . lsp-deferred)
+             :hook(;;(scala-mode . lsp-deferred)
                    (elixir-mode . lsp-deferred)
                    ;; if you want which-key integration
                    (lsp-mode . lsp-enable-which-key-integration)))

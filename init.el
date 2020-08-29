@@ -83,7 +83,7 @@ If you experience stuttering, increase this.")
 ;; LSP mode
 (require 'init-lsp)
 
-(require 'prog-scala)
+;;(require 'prog-scala)
 (require 'prog-elixir)
 
 ;; (require 'init-format)
