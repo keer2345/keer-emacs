@@ -7,14 +7,30 @@
                    read-process-output-max (* 1024 1024))
              ;;(setq read-process-output-max (* 1024 1024)) ;; 1mb
              :commands (lsp lsp-deferred)
+	     :config
+	     (setq lsp-prefer-flymake nil)
              :hook(;;(scala-mode . lsp-deferred)
+                   (python-mode . lsp-deferred)
                    (elixir-mode . lsp-deferred)
                    ;; if you want which-key integration
                    (lsp-mode . lsp-enable-which-key-integration)))
 
 ;; optionally
 (use-package lsp-ui
-             :commands lsp-ui-mode
+  :commands lsp-ui-mode
+  :requires lsp-mode flycheck
+  :config
+  (setq lsp-ui-doc-enable t
+        lsp-ui-doc-use-childframe t
+        lsp-ui-doc-position 'top
+        lsp-ui-doc-include-signature t
+        lsp-ui-sideline-enable nil
+        lsp-ui-flycheck-enable t
+        lsp-ui-flycheck-list-position 'right
+        lsp-ui-flycheck-live-reporting t
+        lsp-ui-peek-enable t
+        lsp-ui-peek-list-width 60
+        lsp-ui-peek-peek-height 25)
              :after (lsp-mode))
 
 ;; if you are ivy user
@@ -29,7 +45,6 @@
 ; Auto-complete sources from LSP servers
 (use-package company-lsp
              :commands company-lsp
-             ;; :after (company lsp)
              :after (company lsp)
              (push 'company-lsp company-backends))
 

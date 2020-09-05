@@ -85,6 +85,7 @@ If you experience stuttering, increase this.")
 
 ;;(require 'prog-scala)
 (require 'prog-elixir)
+(require 'prog-python)
 
 ;; (require 'init-format)
 
